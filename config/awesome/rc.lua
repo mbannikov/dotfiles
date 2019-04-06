@@ -82,7 +82,7 @@ local guieditor    = "subl"
 local scrlocker    = "slock"
 
 awful.util.terminal = terminal
-awful.util.tagnames = { "browser", "terminal", "idle", "4", "5" }
+awful.util.tagnames = { "browser", "terminal", "idle", "messengers", "5" }
 awful.layout.layouts = {
     awful.layout.suit.tile,
     awful.layout.suit.tile.left,

@@ -23,6 +23,7 @@ alias g='grep'
 alias d='docker'
 alias k='kubectl'
 alias a='ansible'
+alias ap='ansible-playbook'
 
 
 # Uncomment the following line to use case-sensitive completion.

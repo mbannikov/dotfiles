@@ -57,3 +57,6 @@ URxvt.scrollBar:		false
 ! ----- Font -----
 URxvt.font: xft:DejaVu Sans Mono:pixelsize=11
 URxvt.boldFont: xft:DejaVu Sans Mono:pixelsize=11:weight=bold
+
+
+Xft.dpi: 90

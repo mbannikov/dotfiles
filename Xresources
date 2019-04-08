@@ -1,16 +1,3 @@
-! ----- Disable Ctrl-Shift default binding -----
-URxvt.iso14755:			false
-URxvt.iso14755_52:		false
-
-
-! ----- keyboard-select -----
-URxvt.perl-ext-common:		default,keyboard-select
-URxvt.keysym.C-S:		perl:keyboard-select:activate
-!URxvt.keysym.C-C:		perl:clipboard:copy
-!URxvt.keysym.C-V:		perl:clipboard:paste
-URxvt.keyboard-select.clipboard:true
-
-
 ! ----- Colors -----
 ! special
 *.foreground:   		#c5c8c6
@@ -48,15 +35,5 @@ URxvt.keyboard-select.clipboard:true
 ! white
 *.color7:       		#c5c8c6
 *.color15:			#ffffff
-
-
-! ----- ScrollBar -----
-URxvt.scrollBar:		false
-
-
-! ----- Font -----
-URxvt.font: xft:DejaVu Sans Mono:pixelsize=11
-URxvt.boldFont: xft:DejaVu Sans Mono:pixelsize=11:weight=bold
-
 
 Xft.dpi: 90

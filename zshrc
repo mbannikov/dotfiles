@@ -2,13 +2,13 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="gentoo"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
+source $ZSH/oc_completion
 
 
 # Variables
 export EDITOR=vim
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 export LANG=en_US.UTF-8
-
 
 # Aliases
 alias ls='ls -h --color=auto --group-directories-first'
@@ -24,6 +24,12 @@ alias d='docker'
 alias k='kubectl'
 alias a='ansible'
 alias ap='ansible-playbook'
+
+# SBI proxy workaround
+export SBI=socks5://localhost:8080/
+alias sgit='ALL_PROXY=$SBI git'
+alias scurl='ALL_PROXY=$SBI curl'
+alias shttpie='ALL_PROXY=$SBI httpie'
 
 
 # Uncomment the following line to use case-sensitive completion.

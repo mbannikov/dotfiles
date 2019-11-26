@@ -1,8 +1,8 @@
 # Export local executables
 export PATH=$PATH:$HOME/bin # &&
 
-# Adjust VM screen size
-adjust-screen-size
+# Setting "ls" sorting
+#export LC_ALL="C"
 
 # Set keybord layout
 setxkbmap -layout "us,ru" -option "grp:alt_shift_toggle"

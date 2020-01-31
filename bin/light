@@ -1,0 +1,25 @@
+#!/bin/bash
+
+set -e
+
+FILE="/sys/class/backlight/intel_backlight/brightness"
+
+CURRENT_VALUE=$(cat "$FILE")
+NEW_VALUE="$CURRENT"
+
+if [ "$1" = "set" ]
+then
+    NEW_VALUE=$2
+fi
+
+if [ "$1" = "inc" ]
+then
+    NEW_VALUE=$(( CURRENT_VALUE + $2 ))
+fi
+
+if [ "$1" = "dec" ]
+then
+    NEW_VALUE=$(( CURRENT_VALUE - $2 ))
+fi
+
+echo "$NEW_VALUE" | tee "$FILE"

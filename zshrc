@@ -16,7 +16,7 @@ alias grep='grep --color=auto'
 alias mkdir='mkdir -p'
 
 # short variants
-alias ll='ls -la'
+alias ll='ls -l'
 alias l='clear; ll'
 alias c='clear'
 alias g='grep'
@@ -24,12 +24,6 @@ alias d='docker'
 alias k='kubectl'
 alias a='ansible'
 alias ap='ansible-playbook'
-
-# SBI proxy workaround
-export SBI=socks5://localhost:8080/
-alias sgit='ALL_PROXY=$SBI git'
-alias scurl='ALL_PROXY=$SBI curl'
-alias shttpie='ALL_PROXY=$SBI httpie'
 
 
 # Uncomment the following line to use case-sensitive completion.

@@ -144,10 +144,21 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 
 # force a window on a workspace
+# web space
 assign [class="firefox"] $ws1
+# chat space
 assign [class="TelegramDesktop"] $ws2
 assign [class="whats-app-nativefier-d52542"] $ws2
 assign [class="Slack"] $ws2
+# code space
+assign [class="jetbrains-idea"] $ws3
+# manage space
+assign [class="Notable"] $ws9
+assign [class="Trello"] $ws9
+assign [class="google-calendar-nativefier-*"] $ws9
+
+# set idea logo-winndow always floating
+# for_window [class="jetbrains-idea" name="win0"] floating enable
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -188,12 +199,12 @@ bindsym $mod+r mode "resize"
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 5%- unmute
 # Mute/Unmute volume
-bindsym XF86AudioMute exec amixer -q set Master toggle
+bindsym XF86AudioMute exec amixer -q -D pulse set Master toggle
 # Mute/Unmute speaker
-bindsym XF86AudioMicMute exec amixer -q set Speaker toggle
+bindsym XF86AudioMicMute exec amixer -q -D pulse set Speaker toggle
 # Increase/Decrease brightness
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10
-bindsym XF86MonBrightnessDown  exec xbacklight -dec 10
+bindsym XF86MonBrightnessUp exec light -A 10
+bindsym XF86MonBrightnessDown  exec light -U 10
 
 # f7 XF86Display
 # f8 XF86WLAN
@@ -204,9 +215,7 @@ bindsym XF86MonBrightnessDown  exec xbacklight -dec 10
 #exec --no-startup-id adjust_milti_monitor
 # Start polybar to display a workspace bar (plus the system information)
 exec --no-startup-id $HOME/.config/polybar/launch.sh
-#exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-
-exec compton -b
+exec --no-startup-id compton -b
 exec --no-startup-id megasync
 exec --no-startup-id nm-applet
 exec --no-startup-id feh --bg-scale ~/wallpapers/mountain.jpg

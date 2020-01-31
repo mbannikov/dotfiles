@@ -1,0 +1,20 @@
+#!/bin/bash
+
+ln -s /home/$USER/personal/dotfiles/bin /home/$USER/bin
+ln -s /home/$USER/personal/dotfiles/config/i3 /home/$USER/.config/i3
+ln -s /home/$USER/personal/dotfiles/config/termite /home/$USER/.config/termite
+ln -s /home/$USER/personal/dotfiles/bin /home/$USER/bin
+ln -s /home/$USER/personal/dotfiles/bin /home/$USER/bin
+ln -s /home/$USER/personal/dotfiles/bin /home/$USER/bin
+ln -s /home/$USER/personal/dotfiles/bin /home/$USER/bin
+
+ln -s /home/maksim/$USER/dotfiles/polybar /home/maksim/.config/
+
+profile
+Xmodmap
+Xresources
+zshrc
+
+
+pacman.conf
+history | grep vim | sort | uniq

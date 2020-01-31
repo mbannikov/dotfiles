@@ -1,0 +1,20 @@
+#!/bin/bash
+
+xrandr --output eDP-1 --auto --size 3840x2160 \
+       --output HDMI-1 --auto
+
+# xrandr --output eDP-1 --scale 1x1 --pos 0x2160 
+# xrandr --output HDMI-1 --scale 2x2 --fb 3840x3960
+
+# xrandr --output eDP-1 --auto
+# xrandr --output HDMI-1 --scale 1.8x1.8 --fb 3840x3960 --auto
+# xrandr --output eDP-1 --auto --output HDMI-1 --auto
+
+#xrandr --output HDMI-1 --size 1920x1080 --scale 1.8x1.8 --fb 3840x3960 --auto
+#xrandr --output HDMI-1 --size 1920x1080 --scale 1.8x1.8 --fb 6016x1944 #--above eDP-1
+#xrandr --output eDP-1 --auto --output HDMI-1 --auto
+
+#3456x1944
+#xrandr --fb 2560x2520 --output HDMI-1 --size 1920x1080 --scale 1.8x1.8 --above eDP-1
+#xrandr --fb 3456x2520 --output HDMI-1 --size 1920x1080 --scale 1.8x1.8 --above eDP-1
+#xrandr --output eDP-1 --pos 0x1950

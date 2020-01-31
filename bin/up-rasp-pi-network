@@ -1,0 +1,11 @@
+sudo ifconfig ethExt down
+sudo ifconfig ethExt 192.168.2.1 netmask 255.255.255.0
+
+sudo sysctl -w net.ipv4.ip_forward=1
+
+INTERFACE=tun0
+
+sudo iptables -F
+sudo iptables -t nat -A POSTROUTING -o $INTERFACE -j MASQUERADE
+sudo iptables -I FORWARD -o $INTERFACE -s 192.168.2.0/8 -j ACCEPT
+sudo iptables -I INPUT -s 192.168.2.0/8 -j ACCEPT

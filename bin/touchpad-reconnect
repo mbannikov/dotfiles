@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+#gksudo 'echo -n "none" | tee /sys/bus/serio/devices/serio1/drvctl; echo -n "reconnect" | tee /sys/bus/serio/devices/serio1/drvctl'
+echo -n "none" | sudo tee /sys/bus/serio/devices/serio1/drvctl
+echo -n "reconnect" | sudo tee /sys/bus/serio/devices/serio1/drvctl

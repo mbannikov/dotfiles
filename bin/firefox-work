@@ -1,0 +1,3 @@
+#!/bin/bash
+
+firefox --profile ~/.mozilla/firefox/uz20yvxa.work "$1"

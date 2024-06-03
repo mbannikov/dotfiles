@@ -1,0 +1,28 @@
+---
+
+# Installing dependencies:
+- brewfile:
+    file: Brewfile
+    no-upgrade: true
+    stdout: true
+    stderr: true
+    include: ['tap', 'brew']
+#    include: [ 'tap', 'brew', 'cask', 'mas']
+
+
+- shell:
+    # See https://sdkman.io/
+    - command: |
+        [ ! -d "$HOME/.sdkman" ] && \
+        sh -c \
+          "$(curl -fsSL https://get.sdkman.io)" \
+        || true
+      description: Install SDKMAN
+      stdout: true
+      stderr: true
+    - command: |
+        source "$HOME/.sdkman/bin/sdkman-init.sh" && \
+        sdk install java
+      description: Install JDK
+      stdout: true
+      stderr: true

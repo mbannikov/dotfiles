@@ -2,6 +2,9 @@
 
 # `.exports` is used to provide custom variables.
 
+export VISUAL=vim
+export EDITOR=vim
+
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
  export EDITOR='vim'

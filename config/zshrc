@@ -74,3 +74,6 @@ source "$HOME/.zplugrc"
 source "$HOME/.shell/.exports"
 source "$HOME/.shell/.aliases"
 source "$HOME/.shell/.completions"
+
+# Scaleway CLI autocomplete initialization.
+eval "$(scw autocomplete script shell=zsh)"

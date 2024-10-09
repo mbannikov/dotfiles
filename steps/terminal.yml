@@ -30,6 +30,7 @@
 
     # Editors:
     ~/.editorconfig: config/editorconfig
+    ~/.ideavimrc: config/ideavimrc
 #    ~/.vimrc: config/vimrc
 
     # SSH:
@@ -37,3 +38,6 @@
       path: config/ssh_config
       force: true
       create: true
+
+    # Other
+    ~/.config/ranger/rc.conf: config/rc.conf

@@ -12,6 +12,9 @@ alias localip='ipconfig getifaddr en0'
 # Copy public key to clipboard:
 alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 
+alias python=python3
+alias pip=pip3
+
 alias l='clear; ls -l'
 alias c='clear'
 alias hg='history | grep'

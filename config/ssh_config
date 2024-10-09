@@ -2,3 +2,8 @@ Host *
   UseKeychain yes
   AddKeysToAgent yes
   IdentityFile ~/.ssh/id_rsa
+
+  # Need fot MGTS ssh connect
+  #KexAlgorithms +diffie-hellman-group1-sha1,diffie-hellman-group14-sha1
+  #PubkeyAcceptedAlgorithms +ssh-rsa 
+  #HostKeyAlgorithms +ssh-rsa 

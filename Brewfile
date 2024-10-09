@@ -28,14 +28,37 @@ brew "zplug"
 brew "fzf"
 # UNIX shell (command interpreter)
 brew "zsh"
+# Port scanning utility for large networks
+brew "nmap"
+# User interface to the TELNET protocol
+brew "telnet"
+# Tools for building Android applications
+cask "android-studio"
+# Collaborative design tool for building meaningful products
+cask "figma"
+# Interactive tool for analyzing MongoDB data
+cask "mongodb-compass"
+# App to write, plan, collaborate, and get organised
+cask "notion"
+# Platform for API development
+cask "postman"
+# A launcher of powerful productivity tools
+cask "raycast"
+# To-do list
+cask "todoist"
+# Keyboard configurator
+cask "via"
+# Open-source code editor
+cask "visual-studio-code"
+# Multimedia player
+cask "vlc"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerised applications and microservices
 cask "docker"
+brew "docker-completion"
 # Web browser
 cask "firefox"
-# Terminal built on web technologies
-cask "hyper"
 # Support for Logitech G gear
 cask "logitech-g-hub"
 # Quicklook extension for source files
@@ -46,5 +69,6 @@ cask "telegram"
 cask "yandex-music"
 # Video communication and virtual meeting platform
 cask "zoom"
-mas "HazeOver", id: 430798174
+
+mas "WireGuard", id: 1451685025
 mas "Delete Apps", id: 1033808943

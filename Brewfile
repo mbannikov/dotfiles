@@ -32,6 +32,16 @@ brew "zsh"
 brew "nmap"
 # User interface to the TELNET protocol
 brew "telnet"
+# Terminal emulator
+cask "iterm2"
+# Cloud gaming platform
+cask "nvidia-geforce-now"
+# Syncs files between computers and MEGA Cloud drives
+cask "megasync"
+# Native desktop client for WhatsApp
+cask "whatsapp"
+# Online diagram software
+cask "drawio"
 # Tools for building Android applications
 cask "android-studio"
 # Collaborative design tool for building meaningful products
@@ -50,6 +60,8 @@ cask "todoist"
 cask "via"
 # Open-source code editor
 cask "visual-studio-code"
+# Java IDE by JetBrains
+cask "intellij-idea"
 # Multimedia player
 cask "vlc"
 # Voice and text chat software
